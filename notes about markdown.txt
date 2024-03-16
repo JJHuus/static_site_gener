@@ -44,6 +44,19 @@ in html:
 in markdown:
     ![alt text for image](url/of/image.jpg)
 
+Orderless lists
+
+in html:
+    <ul>
+        <li>point 1</li>
+        <li>point 2</li>
+        <li>point 3</li>
+    </ul>
+in markdown:
+    * point 1
+    * point 2
+    * point 3
+
 Ordered lists
 
 in html:
