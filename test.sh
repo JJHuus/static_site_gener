@@ -1,0 +1,1 @@
+python -m unittest discover -s src #tells the python "unittest" library to do all unit tests found in the "src" folder
