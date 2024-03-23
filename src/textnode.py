@@ -17,4 +17,4 @@ class TextNode:
             )
     
     def __repr__(self):
-        return f"TextNode({self.text}, {self.text_type}, {self.url})"
+        return f"\nTextNode({self.text}, {self.text_type}, {self.url})\n"
