@@ -20,12 +20,15 @@ class htmlnode:
 
     def props_to_html(self):
         output = ""
-        items = self.props.items()
-        for i in range(0, len(items)):
-            output = output + items[i][0] + "=" + items[i][1]
-            if i == 0:
+        first = True
+        for item in self.props:
+            if first == False:
                 output = output + " "
+            first = False
+            output = output + item + "="
+            output = output + self.props[item]
         return output
+            
     
     def __repr__(self):
         return (
@@ -33,7 +36,7 @@ class htmlnode:
             f"t {self.tag}" + "\n" + 
             f"v {self.value}" + "\n" + 
             f"c {self.children}" + "\n" + 
-            f"p {self.props.items()}" + "\n"
+            f"p {self.props}" + "\n"
         )
     
     def __eq__(self, other):
