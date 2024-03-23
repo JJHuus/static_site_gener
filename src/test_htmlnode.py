@@ -28,6 +28,10 @@ class TestTextNode(unittest.TestCase):
         node = htmlnode("tag", 0, ["help", 1], {"test": True, "test2": "False"})
         node2 = htmlnode("tag", 0, ["help", 1], {"test": True, "test2": False})
         self.assertEqual(node, node2)
+    def test_eq7(self): #None
+        node = htmlnode("tag", 0, ["help", 1], {"test": True, "test2": "False"})
+        node2 = htmlnode()
+        self.assertEqual(node, node2)
    
 
 
